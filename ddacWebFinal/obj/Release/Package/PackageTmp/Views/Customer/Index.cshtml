@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ddacWebFinal.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Customer List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.companyname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.businesstype)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.country)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.companyname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.businesstype)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.country)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

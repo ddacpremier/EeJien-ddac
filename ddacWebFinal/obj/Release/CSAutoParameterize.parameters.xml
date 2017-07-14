@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Model1Container-Web.config Connection String" description="Model1Container Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=ddacnew.database.windows.net;initial catalog=ddac;persist security info=True;user id=jien;password=Admin1234;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\sammie\\documents\\visual\ studio\ 2015\\Projects\\ddacWebFinal\\ddacWebFinal\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Model1Container']/@connectionString" />
+  </parameter>
+</parameters>
